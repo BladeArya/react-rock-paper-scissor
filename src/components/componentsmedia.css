@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Fredoka+One&family=Girassol&family=M+PLUS+1p:wght@300&family=Press+Start+2P&family=Stardos+Stencil&display=swap');
+.root{
+    flex-grow: 1;
+}
+.title{
+      flex-grow: 1;
+}
+.titlename{
+    font-family: 'Press Start 2P', cursive;
+}
+.scoreboard{
+      border:2px solid black;
+      text-align:center;
+      background-color:white;
+      padding:2px;
+}
+.scoreboarddetail{
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.userdatagrid{
+    flexGrow: 1;
+}
+.rockbutton{
+    background: url("../images/rock.svg") no-repeat center;
+}
+.paperbutton{
+    background: url("../images/paper.svg") no-repeat center;
+}
+.scissorsbutton{
+    background: url("../images/scissors.svg") no-repeat center;
+}
+.paperbutton,.rockbutton,.scissorsbutton,.counterbutton{
+    height: 150px;
+    width: 150px;
+}
+.winnerbutton{
+    border: 10px solid rgba(89,75,144,1);
+}
+.gametext{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Dosis', sans-serif;
+    color: antiquewhite;
+}
+.resulttext{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    color: azure;
+}
+.counterbutton{
+    display: grid;
+    place-items: center;
+}
+.counternumber{
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+}
+.infobutton{
+    display: grid;
+    place-items: center;
+}
+.play-again{
+    text-decoration: none;
+    font-family: 'Stardos Stencil', cursive;
+    background-color: beige;
+    color: black;
+    font-size: 2rem;
+}
+.game__play{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.footerdata{
+    background-color: red;
+}
+.attribution {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 1rem;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: blanchedalmond;
+}
