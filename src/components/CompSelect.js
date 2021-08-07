@@ -15,9 +15,7 @@ function CompSelect({userChoice,score,setScore}) {
   };
   useEffect(() => {
         newCompPick();
-        }, []);
-
-   useEffect(()=>{
+    }, []);
     const Result = () => {
         if (userChoice === "rock" && compChoice === "scissors") {
           setPlayerWin("win");
@@ -41,13 +39,16 @@ function CompSelect({userChoice,score,setScore}) {
           setPlayerWin("draw");
         }
   };
-        const timer = counter > 0 ? setInterval(() => {
+
+   useEffect(()=>{
+    const timer = counter > 0 ? setInterval(() => {
                     setCounter(counter - 1);
-                    }, 1000) : Result();
+                    }, 1000) : 
+                    Result();
         return()=>{
-            clearInterval(timer);
+        clearInterval(timer);
         };
-    },[counter,compChoice,score,setScore,userChoice])
+    },[counter,compChoice])
     return(
         <Grid container className={"userdatagrid"} spacing={2}>
             <Grid item xs={12}>
